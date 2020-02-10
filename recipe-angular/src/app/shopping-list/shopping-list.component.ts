@@ -9,7 +9,8 @@ import { Ingredient } from '../shared/ingredients.module';
 })
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [
-    new Ingredient ('Rice', '150')
+    new Ingredient ('Rice', '150'),
+    new Ingredient('Sugar', '50')
   ];
 
   constructor() { }
