@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-angular';
+  nav: string = '';
+
+  selectedNav(userSelect: string) {
+    if(userSelect === 'recipe') {
+      this.nav = 'recipe';
+    }
+    else if (userSelect === 'shoppingList') {
+      this.nav = 'shoppingList'
+    }
+  }
 }
