@@ -9,9 +9,17 @@ import { Ingredient } from '../shared/ingredients.module';
 })
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [
-    new Ingredient ('Rice', '150'),
-    new Ingredient('Sugar', '50')
+    new Ingredient ('Rice', 150),
+    new Ingredient('Sugar', 50)  
   ];
+
+  onAdded(ingredients: {nameInput: string, quantityInput: number}) {
+    this.ingredients.push(
+      new Ingredient(
+        ingredients.nameInput,
+        ingredients.quantityInput)
+    )
+  }
 
   constructor() { }
 
