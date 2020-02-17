@@ -19,6 +19,12 @@ export class ShoppingListService {
                 quantityInput
             )
         )
-        console.log('service called')
     };
+
+    getIngredientsFromRecipe(ingredients: Ingredient[]){
+        for (let ingredient of ingredients) {
+            this.ingredients.push(ingredient)
+            
+        }
+    }
 }
