@@ -1,6 +1,6 @@
 import {EventEmitter} from '@angular/core';
 
-import {Ingredient} from '../shared/ingredients.module';
+import {Ingredient} from '../shared/ingredients.model';
 
 export class ShoppingListService {
     private ingredients: Ingredient[] = [
@@ -9,7 +9,7 @@ export class ShoppingListService {
     ]
 
     getIngredients() {
-        return this.ingredients.slice();
+        return this.ingredients;
     }
 
     onAddIngredient(nameInput: string, quantityInput: number) {
