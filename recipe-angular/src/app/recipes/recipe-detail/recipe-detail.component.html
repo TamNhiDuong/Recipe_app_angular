@@ -9,7 +9,7 @@
         <h1>{{recipe.name}}</h1>
     </div>
 </div>
-
+  
 <div class="row">
     <div class="col-xs-12">
         <div class="btn-group" appDropdown>
@@ -20,8 +20,8 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a (click)="onAddToShoppingList(recipe.ingredients)">Send To Shopping List</a></li>
-                <li><a href="#">Edit Recipe</a></li>
-                <li><a href="#">Delete Recipe</a></li>
+                <li><a style='cursor: pointer'>Edit Recipe</a></li>
+                <li><a style='cursor: pointer'>Delete Recipe</a></li>
             </ul>
         </div>
     </div>

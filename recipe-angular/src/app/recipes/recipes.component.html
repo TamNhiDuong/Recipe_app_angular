@@ -3,13 +3,15 @@
     <app-recipe-list ></app-recipe-list>
   </div>
   <div class="col-md-7">
-      <app-recipe-detail
-        *ngIf="selectedRecipe; else noSelected"
-        [recipe]="selectedRecipe">
+      <!--<app-recipe-detail
+        *ngIf="selectedRecipe; else noSelected; let i = index"
+        [recipe]="selectedRecipe"
+        [routerLink]="['/recipes', i]">
       </app-recipe-detail>
       <ng-template #noSelected>
         <p>No recipe selected!</p>
-      </ng-template>
+      </ng-template>-->
+      <router-outlet></router-outlet>
   </div>
 </div>
- 
+     

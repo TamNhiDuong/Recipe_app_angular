@@ -33,5 +33,8 @@ addRecipeToShoppingList(ingredients: Ingredient[]) {
     this.shoppingListService.getIngredientsFromRecipe(ingredients)
 }
 
-selectedRecipe = new EventEmitter<Recipe>();
+//selectedRecipe = new EventEmitter<Recipe>();
+selectedRecipe(id: number) {
+    return this.recipes[id];
+}
 }
