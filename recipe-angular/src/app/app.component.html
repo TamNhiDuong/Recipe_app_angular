@@ -3,12 +3,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div *ngIf="nav === 'recipe'">
+            <!--<div *ngIf="nav === 'recipe'">
                 <app-recipes></app-recipes>
             </div>
             <div *ngIf="nav === 'shoppingList'">
                 <app-shopping-list></app-shopping-list>
-            </div>
+            </div>-->
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>
