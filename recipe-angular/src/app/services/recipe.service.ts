@@ -35,6 +35,6 @@ addRecipeToShoppingList(ingredients: Ingredient[]) {
 
 //selectedRecipe = new EventEmitter<Recipe>();
 selectedRecipe(id: number) {
-    return this.recipes[id];
+    return this.recipes[id]; 
 }
 }
